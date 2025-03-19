@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a problem in iNook
+labels: [bug]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        *Before reporting:*
+        - Confirm the problem is reproducible on the [**latest release**](https://github.com/jeluchu/inook-releases/releases/latest)
+        - Search [existing issues](https://github.com/jeluchu/inook-releases/issues?q=is%3Aopen+is%3Aissue+label%3Abug) (including [closed](https://github.com/jeluchu/inook-releases/issues?q=is:issue+is:closed+label:bug))
+
+        Questions about ‘How to link iNook to my Nintendo Switch game’ will be closed automatically. As stated many times before, third-party apps cannot access your Nintendo Switch game information.
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the current behavior. May include crash logs, images, or videos."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Steps to reproduce"
+      description: "List the steps to reproduce the problem."
+      placeholder: |
+        Open iNook
+        Click in Villagers
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe the behavior you expect."
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "iNook version"
+      description: |
+        1.  Open iNook
+        2.  Click Settings
+      placeholder: "3.0.0 (80)"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "Operating System (Android / iOS)"
+      placeholder: "For example: Android"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Operating System Version"
+      placeholder: "For example: Android 15 or iOS 18"
+    validations:
+      required: true

@@ -1,0 +1,23 @@
+name: Artist request
+description: Request to be featured in the iNook Artist Section
+title: "[Artist Request]: "
+labels: [Artist, enhancement]
+projects: ["jeluchu/3"]
+assignees:
+  - jeluchu
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Please note that the information you provide will appear in the iNook application in its Android and iOS versions, so it will be reviewed before publication. If you have any questions, please do not hesitate to access our [discord server](https://discord.gg/Kw2wQKH35e).
+
+  - type: input
+    id: artist_name
+    attributes:
+      label: "Artist's name"
+      description: "This must be your artistic or real name, remember that this is the name that will be shown in the app"
+      placeholder: "ej. Jeluchu"
+    validations:
+      required: true

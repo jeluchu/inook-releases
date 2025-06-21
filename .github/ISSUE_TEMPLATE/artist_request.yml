@@ -18,6 +18,81 @@ body:
     attributes:
       label: "Artist's name"
       description: "This must be your artistic or real name, remember that this is the name that will be shown in the app"
-      placeholder: "ej. Jeluchu"
+      placeholder: "ex. Jeluchu"
     validations:
       required: true
+
+  - type: textarea
+    id: artist_description
+    attributes:
+      label: "Short presentation"
+      description: "Tell us in a few words about your work (máx. 100 characters)"
+      placeholder: "Craft items on Animal Crosing!"
+    validations:
+      required: false
+      max_length: 100
+
+  - type: textarea
+    id: image_uploads
+    attributes:
+      label: "Logo and images of your products
+      description: |
+        **Drag and drop images here or paste image links here**
+        
+        You can upload a maximum of 10 images:
+        - Photo of your logo/avatar
+        - Pictures of your products
+        
+        *Supported formats: JPG or PNG (max 25MB per image)*
+      placeholder: "Drag the images you want to be included here"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: artist_is_open
+    attributes:
+      label: "Do you accept orders?"
+      description: "Select the option that corresponds to whether you are currently accepting orders or not accepting new orders at this time."
+      options:
+        - Open shop! We accept orders
+        - We are currently not accepting orders
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        If this option changes at a later date, please do not hesitate to contact us through our [discord server](https://discord.gg/Kw2wQKH35e), you can also reopen this petition by leaving a comment, or by writing us an e-mail.
+
+  - type: textarea
+    id: portfolio_links
+    attributes:
+      label: "Links to social networks or to your website"
+      description: "Include as many links as you like so that people can learn more about your work."
+      placeholder: |
+        Instagram: https://instagram.com/jeluchu
+        Website: https://x.com/jeluchu
+
+        Other websites...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: artist_nationality
+    attributes:
+      label: "Do you ship internationally?"
+      description: "To give more detailed shipping information to users, you will need to indicate whether you ship internationally or not."
+      options:
+        - Of course! I ship internationally
+        - No, only national shipments
+    validations:
+      required: true
+
+  - type: input
+    id: nationality_of_shipments
+    attributes:
+      label: "To which country do you ship your products?"
+      description: "In case your previous answer was ‘No, only national shipments’, please tell us the name of your country"
+      placeholder: "Spain"
+    validations:
+      required: false

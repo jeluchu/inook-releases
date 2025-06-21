@@ -37,13 +37,13 @@ body:
     attributes:
       label: "Logo and images of your products
       description: "
-        **Drag and drop images here or paste image links here**
+        Drag and drop images here or paste image links here
         
         You can upload a maximum of 10 images:
         - Photo of your logo/avatar
         - Pictures of your products
         
-        *Supported formats: JPG or PNG (max 25MB per image)*"
+        Supported formats: JPG or PNG (max 25MB per image)"
       placeholder: "Drag the images you want to be included here"
     validations:
       required: true

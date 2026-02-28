@@ -98,7 +98,7 @@ No. Third-party apps cannot access Nintendo Switch game data directly. Only Nint
 
 Got suggestions, found a bug, or want to send feedback?
 
-📧 **[inookapp@gmail.com](mailto:inookapp@gmail.com)**
+📧 **[inookapp@gmail.com](mailto:helpmejeluchu@gmail.com)**
 
 |  |  |
 |--|--|
